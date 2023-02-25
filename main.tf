@@ -45,7 +45,7 @@ resource "aws_eip" "eip" {
   vpc      = true
 
   tags = {
-    Name = "Web Server Elastic IP"
+    Name = var.TAGS
   }
 }
 

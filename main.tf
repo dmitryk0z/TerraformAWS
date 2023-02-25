@@ -8,7 +8,7 @@ resource "aws_instance" "demo" {
 }
 
 resource "aws_security_group" "demo_security_group" {
-  name_prefix = "demo-server-sg"
+  name_prefix = "default"
 	
   ingress {
     from_port   = 22

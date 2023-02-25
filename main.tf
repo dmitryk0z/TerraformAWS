@@ -5,10 +5,10 @@ resource "aws_instance" "demo" {
   tags = {
 	Name = var.TAGS
   }
+  vpc_security_group_ids = [aws_security_group.demo_security_group.id]
 }
 
 resource "aws_security_group" "demo_security_group" {
-  name_prefix = "default"
 	
   ingress {
     from_port   = 22

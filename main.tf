@@ -5,7 +5,6 @@ resource "aws_instance" "demo" {
   tags = {
 	Name = var.TAGS
   }
-  count = var.COUNT
 }
 
 resource "aws_security_group" "demo_security_group" {
@@ -41,7 +40,7 @@ resource "aws_security_group" "demo_security_group" {
 }
 
 resource "aws_eip" "eip" {
-  instance = aws_instance.demo[count.index].id
+  instance = aws_instance.demo.id
   vpc      = true
 
   tags = {

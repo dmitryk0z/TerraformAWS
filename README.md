@@ -1,2 +1,2 @@
 # TerraformAWS
-Terraform to create AWS EC2 instance
+Terraform to create an AWS EC2 instance

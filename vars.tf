@@ -25,7 +25,3 @@ variable "KEY_NAME" {
 variable "TAGS" {
   default = "Demo"
 }
-
-variable "COUNT" {
-  default = "1"
-}

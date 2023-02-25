@@ -41,7 +41,7 @@ resource "aws_security_group" "demo_security_group" {
 }
 
 resource "aws_eip" "eip" {
-  instance = aws_instance.demo.id
+  instance = aws_instance.demo[count.index].id
   vpc      = true
 
   tags = {

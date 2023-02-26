@@ -47,7 +47,3 @@ resource "aws_eip" "eip" {
     Name = var.TAGS
   }
 }
-
-output "public_ip" {
-  value = aws_eip.eip.public_ip
-}
